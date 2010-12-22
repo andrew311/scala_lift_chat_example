@@ -1,0 +1,23 @@
+<lift:surround with="default" at="content" id="main">
+
+  <lift:comet type="Chat">
+    <ul>
+      <chat:line>
+        <li><chat:msg/></li>
+      </chat:line>
+    </ul>
+  </lift:comet>
+
+
+  <lift:form>
+    <p>
+      <lift:snippet type="ChatIn">
+        <chatin:input />
+        <chatin:submitme />
+      </lift:snippet>
+      
+      <input type="submit" value="Chat" />
+    </p>
+  </lift:form>
+
+</lift:surround>
